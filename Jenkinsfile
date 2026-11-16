@@ -54,6 +54,9 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh '''
+
+                    sudo cp docker-compose.yml /opt/cicd-project/docker-compose.yml
+                    
                     cd /opt/cicd-project
 
                     export DOCKERHUB_USERNAME="$DOCKERHUB_CREDENTIALS_USR"
