@@ -55,7 +55,7 @@ pipeline {
             steps {
                 sh '''
 
-                    sudo cp docker-compose.yml /opt/cicd-project/docker-compose.yml
+                    cp docker-compose.yml /opt/cicd-project/docker-compose.yml
                     
                     cd /opt/cicd-project
 
